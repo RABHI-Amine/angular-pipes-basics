@@ -9,9 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name!:string;
   date!:string;
-  amount!:string;
+  amount!:number;
 
-  height!:string;
+  height!:number;
+  miles!:number;
 
   onNameChange(name:string){
     this.name = name;
@@ -22,11 +23,14 @@ export class AppComponent {
   }
 
   onAmountChange(amount:string){
-    this.amount = amount
+    this.amount = parseFloat(amount)
   }
 
   onHeightChange(height:string){
-    this.height = height;
+    this.height = parseFloat(height);
   }
 
+  onMilesChange(miles:string){
+    this.miles = parseFloat(miles);
+  }
 }
