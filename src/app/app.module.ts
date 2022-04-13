@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ConvertMilesToKmsPipe } from './convert-miles-to-kms.pipe';
+import { ConvertMilesPipe } from './convert-miles.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConvertMilesToKmsPipe
+    ConvertMilesToKmsPipe,
+    ConvertMilesPipe
   ],
   imports: [
     BrowserModule
