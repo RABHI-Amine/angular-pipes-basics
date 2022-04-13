@@ -16,4 +16,20 @@
       </div>
     </div>
   </div>  
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Payeen Date</label>
+      <input 
+        class="form-control"
+        type="date"
+        (input)="onDateChange($any($event.target).value)"  
+      >
+    </div>
+    <div class="col">
+      <label><b>Date</b></label>
+      <div>
+        {{date | date : 'MMMM d, y'}}
+      </div>
+    </div>
+  </div>  
 </div>
