@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name!:string;
   date!:string;
+  amount!:string;
 
   onNameChange(name:string){
     this.name = name;
@@ -15,6 +17,10 @@ export class AppComponent {
 
   onDateChange(date:string){
     this.date = date;
+  }
+
+  onAmountChange(amount:string){
+    this.amount = amount
   }
 
 }
